@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>
+        ABOUT
+    </title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.1.min.js"></script>
+    <script>
+        function getTextForMostThings(){
+            Parse.initialize("p4iC6A6WGN0KEpw5TdkHiIJdJFnd5qBBvA5FjTRR", "72jxZgPHP0OPVONn7BpF8uIGR9MWKZJ7zRIuUj81");
+            var GameScore = Parse.Object.extend("Pic1");
+            var query = new Parse.Query(GameScore);
+            query.get("PletYrGzJm", {
+                success: function(gameScore) {
+                    var about_short = gameScore.get("data");
+                    document.getElementById("about_tv").innerHTML = about_short;
+                },
+                error: function(object, error) {
+                    alert(error);
+                }
+            });
+        }
+    </script>
+</head>
+<body onload="getTextForMostThings()">
+
+<div id="about_tv" />
+
+</body>
+</html>

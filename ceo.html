@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CEO</title>
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <script>
+        //startup
+                var startUPimg = ["http://i.imgur.com/CEGV3WLb.jpg","http://i.imgur.com/yiCz4bjb.jpg","http://i.imgur.com/1OVVtgwb.jpg"];
+                var startUPnames = ["ITAI SHAVIV","YOAV FRANCO","OMRI SAVRANSKY"];
+
+//systems
+                var systemsIMG = ["http://i.imgur.com/9AnTK3mb.jpg","http://i.imgur.com/aJDG7UYb.jpg","http://i.imgur.com/3izcF2Sb.jpg","http://i.imgur.com/BAnWWdIb.jpg"];
+                var systemsNames = ["TOMER NEHMAD","JONATAN KAVITZKY","BAR OREN","ORI POREG"];
+
+//chairman
+                var chairmanIMG = ["http://i.imgur.com/AWjmzTfb.jpg","http://i.imgur.com/E3Z8E3Ib.jpg","http://i.imgur.com/O8dqlT3b.jpg"];
+                var chairmanNames = ["ALEXANDER LEVONTIN","JONATAN OZ","AMIT STEIN"];
+
+//software
+                var  softwareNames = ["NOAM GAL","AMIT BANAI","OZ TAMIR","EDEN ROZEN","EHUD BARAZ","YOAV HAYUT","LIAM KIMEL","TOMER SCHLESINGER","SHAKED REICH"];
+                var softwareIMG = ["http://i.imgur.com/KnhpEmQb.jpg","","http://i.imgur.com/M9776Vzb.jpg","http://i.imgur.com/VTOglvwb.jpg","http://i.imgur.com/dgFMDgWb.jpg","http://i.imgur.com/L34xrx2b.jpg","http://i.imgur.com/mtueseGb.jpg","http://i.imgur.com/aS74qjhb.jpg","http://i.imgur.com/HjHgXieb.jpg"];
+
+//DESIGN
+                var designNames = ["TAL KOGAN","IDO SHYVITZ","OMER HARELI"];
+                var designIMG = ["http://i.imgur.com/saGZTaTb.jpg","http://i.imgur.com/UxH7FQVb.jpg",""];
+
+//STRATEGY
+                var startegyNames = ["LIROM LITMANOVICH"];
+                var strategyIMG = [""];
+
+//CONSTRUCTOIN
+//TODO add all construction team your welcome future TOMER
+
+//MENTORS
+                var mentorsIMG = [""];
+                var mentorsNames = ["OMER","SAAR","RICKI","YUDA","SNIR"];
+
+//MEDIA
+                var mediaNames = ["JONATAN BRODER","JONATAN KAPLAN","TOMER ROSENFELD","TAMIR NEIDERMAN","ITAMAR HOLTZMAN"];
+                var mediaIMG = ["http://i.imgur.com/drvr8C3b.jpg","","http://i.imgur.com/k4r3CSpb.jpg","http://i.imgur.com/mOfZEeCb.jpg","http://i.imgur.com/W30KMO9b.jpg"];
+
+
+        //ceo
+        var ceoNames = ["AVISHAG ROSENBAUM"];
+        var ceoIMG = ["https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/1383010_10202666847943797_2899317506319168262_n.jpg?oh=7fa4fe9569a2a9bab9452ed3767423ce&oe=550EB468&__gda__=1427189847_3071a6fa2f467a456c654e23f1343d04"];
+        function Job() {
+            return sessionStorage.getItem('label');
+        }
+
+        function setImages(job) {
+
+        }
+
+        function setTitle(job) {
+            document.getElementById('Title').innerHTML = job.toUpperCase().replace("_"," ");
+        }
+
+        function setDescription(job) {
+            var ShitToEnterToDescription;
+            var i = 0;
+            switch (job) {
+                case "media":
+                    ShitToEnterToDescription = "in charge of the documentation of the FRC experience and the social media management of the team.";
+                    for( i = 0;i <mediaNames.length;i++){
+                        createILforimages(mediaNames[i],mediaIMG[i]);
+                    }
+                    break;
+                case "construction":
+                    ShitToEnterToDescription = "Our construction team is divided to two teams, arm and chassis. \n Arm: incharge for the construction of the arm for the robot.\n Chassis: in charge of the construction of the chassis for the robot.";
+                    for( i = 0;i <softwareNames.length;i++){
+                        createILforimages(softwareNames[i],softwareIMG[i]);
+                    }
+                    break;
+                case "design":
+                    ShitToEnterToDescription = "The design team is in charge of the virtual design of the robot with cad (computer-aided design) and 3D design and printing.\n The design team is responsible for the robot shape and body.";
+                    for( i = 0;i <designNames.length;i++){
+                        createILforimages(designNames[i],designIMG[i]);
+                    }
+                    break;
+                case "systems":
+                    ShitToEnterToDescription = "Our system team is in charged of the robot pneumatics and electrical systems.\n They are also in charge of the robot LEDs and other electonic parts.";
+                    for( i = 0;i <systemsNames.length;i++){
+                        createILforimages(systemsNames[i],systemsIMG[i]);
+                    }
+                    break;
+                case "community_services":
+                    ShitToEnterToDescription = "Our community service program is our way to pass the FIRST spirit to kids and adults all over the country. We think that everyone deserves to feel and experience the FIRST spirit.";
+                    for( i = 0;i <chairmanNames.length;i++){
+                        createILforimages(chairmanNames[i],chairmanIMG[i]);
+                    }
+                    break;
+                case "strategy":
+                    ShitToEnterToDescription = "There can be no good team without a good strategy.\nOur strategy team plans our strategy for the season which later becomes a robot.";
+                    for( i = 0;i <startegyNames.length;i++){
+                        createILforimages(startegyNames[i],strategyIMG[i]);
+                    }
+                    break;
+                case "start_up":
+                    ShitToEnterToDescription = "";
+                    for( i = 0;i <startUPnames.length;i++){
+                        createILforimages(startUPnames[i],startUPimg[i]);
+                    }
+                    break;
+                case "mentors":
+                    ShitToEnterToDescription = "We are grateful for our mentors and elder support we receive as part of the FRC competition.\nThe knowledge and experience they have are inspiring us to work harder and better.";
+                    for( i = 0;i <mentorsNames.length;i++){
+                        createILforimages(mentorsNames[i],mentorsIMG[i]);
+                    }
+                    break;
+                case "ceo":
+                    ShitToEnterToDescription = "";
+                    for( i = 0;i <ceoNames.length;i++){
+                        createILforimages(ceoNames[i],ceoIMG[i]);
+                    }
+                    break;
+                case "software":
+                    //todo fix software text glitch
+                    ShitToEnterToDescription = "Our software department is in charge for the robot autonomous and the driver controlled software.\nThe software team is the soul in our robot.";
+                    for( i = 0;i <softwareNames.length;i++){
+                        createILforimages(softwareNames[i],softwareIMG[i]);
+                    }
+                    break;
+            }
+            document.getElementById('Description').innerHTML = (ShitToEnterToDescription);
+        }
+        function createILforimages(NAME,IMGLINK){
+            var div = document.createElement("div");
+            var name = document.createElement("p");
+            var image = new Image();
+            name.innerHTML = NAME;
+            image.src = IMGLINK;
+            div.appendChild(name);
+            div.appendChild(image);
+            var ul = document.getElementById("UL");
+            ul.appendChild(div);
+        }
+    </script>
+</head>
+<header class="page1">
+    <ul id="social">
+        <li><a id="men5"><img src="images/facebook.png" class="men5" > <strong class="hover"></strong></a>
+        </li>
+        <li><a id="men6"><img src="images/youtube.png"  class="men6"> <strong class="hover"></strong></a>
+        </li>
+    </ul>
+    <div id="main_nav">
+        <ul class="sf-menu">
+            <li class="men1"><a href="index.html">Home </a>  <strong class="hover"></strong>
+            </li>
+            <li class="current men"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="clear"></div>
+</header>
+
+<body onload="setDescription(Job());setTitle(Job())">
+
+<h2 id="Title">LOADING...</h2>
+
+<br>
+<br>
+<p style="align-content: center" id="Description">Loading...</p>
+<br><br><br><br><br><br><br>
+<ul id="UL">
+
+</ul>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+#Description{
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+p{
+    font-size: 20px;
+}
+#UL{
+    margin-left: 20%;
+    margin-right: 20%;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}

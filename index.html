@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="import" href="components/bower_components/paper-fab/paper-fab.html">
+	<link rel="stylesheet" href="css/Animate.css">
+	<link rel="icon" href="images/logo.ico">
+	<link rel="shortcut icon" href="images/logo.ico" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/form.css">
+	<script src="js/jquery.js"></script>
+    <script src="super.js"></script>
+	<script src="js/jquery-migrate-1.1.1.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/forms.js"></script>
+	<script src="js/jquery.ui.totop.js"></script>
+	<script src="js/jquery.equalheights.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.ui.totop.js"></script>
+	<script src="js/tms-0.4.1.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.1.min.js"></script>
+	<script src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/setElementsFromParse.js"></script>
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+</head>
+
+<body onload="getTextForMostThings(); hello(); " class="">
+<!--==============================header=================================-->
+<div id="loader"></div>
+<header class="page1">
+	<ul id="social">
+		<li><a id="men5"><img src="images/facebook.png" class="men5" > <strong class="hover"></strong></a>
+		</li>
+		<li><a id="men6"><img src="images/youtube.png"  class="men6"> <strong class="hover"></strong></a>
+		</li>
+	</ul>
+	<div id="main_nav">
+		<ul class="sf-menu">
+			<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a>  <strong class="hover"></strong>
+			</li>
+			<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong>
+			</li>
+			<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">The Team</a>  <strong class="hover"></strong>
+			</li>
+			<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Sponsors</a>  <strong class="hover"></strong>
+			</li>
+			<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a>  <strong class="hover"></strong>
+			</li>
+            <li class=" men5"><a  href="tiltviewer2/index.html">Gallery</a>  <strong class="hover"></strong>
+		</ul>
+        <p id="new" style="color: #ff0000">*NEW*</p>
+		<ul id="icon">
+			<li><a onclick="goToByScroll('page1')" id="men7"><img  id="men22" src="images/logo.png" class="men5" > <strong class="hover"></strong></a>
+			</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<div class="clear"></div>
+</header>
+<!--=======content================================-->
+<div id="page1" class="content">
+	<div class="anim0">
+		<a href="tiltviewer2/index.html">
+		<div id="wowslider-container1">
+			<div class="ws_images">
+				<ul title="gallery" id="gallery_mini"></ul>
+			</div>
+			<div class="ws_shadow"></div>
+		</div>
+		</a>
+	</div>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<script type="text/javascript">
+		var ul = document.getElementById("gallery_mini");
+		var li = document.createElement("li");
+				var array = [];
+                for(var l =0;l<6;l++){
+                    var img = new Image();
+                    img.src = "images/gallery-pics/img_"+l;
+                    array.add(img);
+                }
+				for (var i = 1; i < array.length; i++) {
+					var link = array[i];
+					var image = new Image();
+					image.src = link;
+					li.appendChild(image);
+					try {
+						ul.appendChild(li);
+					} catch (e) {
+						alert(e.message + " Error has accord, try reloading the page, if you keep getting the error send an email to the team")
+					}
+				}
+				INITTHISFUCKER1();
+				INITTHISFUCKER2();
+	</script>
+	<!-- End WOWSlider.com BODY section -->
+</div>
+<div id="page2" class="content">
+	<div class="container_12">
+		<div class="grid_12">
+			<div class="slogan">
+				<h3>ABOUT US</h3>
+
+				<div class="anim1">
+					<div id="about_wrapper">
+						<div class="text1">	<a href="full_about.html" rel="nofollow" class="tm_link"> <font color = "green">click here for full about</font></a>
+
+						</div>
+						<div id="about_short"></div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h3>AWARDS</h3>
+
+						<br>
+						<br>
+						<ul class="awards" id="awards"/>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<div id="page3" class="content">
+		<div id="jobs" class="container_12">
+			<div class="slogan">
+				<h3>THE TEAM</h3>
+				<a onclick="OpenInNewTab('ceo.html','ceo');" title="CEO"><img src="images/jobs%20titles/ceo.jpg" class="member_but" id="ceo" ></a>
+				<br>
+				<a onclick="OpenInNewTab('ceo.html','construction');"  title="CONSTRUCTION"><img src="images/jobs%20titles/construction.png" id="construction"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','software');" title="SOFTWARE"><img src="images/jobs%20titles/software.jpg" id="software"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','design');" title="DESIGN"><img src="images/jobs%20titles/design.jpg" id="design"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','systems');" title="SYSTEMS"><img src="images/jobs%20titles/systems.jpg" id="systems"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','strategy');" title="STRATEGY"><img src="images/jobs%20titles/strategy.jpg" id="strategy"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','media');" title="MEDIA"><img src="images/jobs%20titles/media.jpg"  id="media"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','community_services');"  class="title_job" title="COMMUNITY SERVICES"><img src="images/jobs%20titles/chairman.png" id="charmane"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','start_up');" title="START UP"><img src="images/jobs%20titles/start_up.jpg" id="start_up"  class="member_but"></a>
+				<a onclick="OpenInNewTab('ceo.html','mentors');" title="MENTORS"><img src="images/jobs%20titles/mentors.jpg" id="mentors"  class="member_but"></a>
+
+			</div>
+		</div>
+	</div>
+	<div id="page4" class="content">
+		<div class="container_12">
+			<div class="grid_12">
+				<h3>Sponsors</h3>
+
+			</div>
+			<div class="anim3">
+				<!--TO DO: Need to get parse connected to sponsors as UL-->
+				<div id="sponsors">
+					<div class="grid_3">
+						<div class="text1">Hakfar Hayarok</div>כפר נוער ניסויי ומרכז הפצה בינלאומי למנהיגות סביבתית
+						<br>	<a href="https://www.kfaryarok.org.il/">Go to Site</a>
+
+					</div>
+					<div class="grid_3">
+						<div class="text1">WIX</div>Create a free website with Wix.com.
+						<br>	<a href="https://www.wix.com">Go to Site</a>
+
+					</div>
+					<div class="grid_3">
+						<div class="text1">BB Real Estate</div>היא חברת יעוץ ומחקר בתחום הנדל"ן המספקת שירותים לגופים בשוק ההון, לחברות נדל"ן, ולגופים מוסדיים
+						<br>	<a href="http://b-bre.com/">Go to Site</a>
+
+					</div>
+					<div class="grid_3">
+						<div class="text1">FINAL</div>Final specializes in the development of trading algorithms and trade execution technology.
+						<br>	<a href="http://www.final.co.il/">Go To Site</a>
+
+					</div>
+					<div class="grid_3">
+						<div class="text1">YOU CAN BE NEXT!</div>CALL US AND BECOME OUR NEW SPONSOR
+						<br>	<a onclick="goToByScroll('page5')">CALL US NOW!</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="page5" class="content">
+		<div class="slogan">
+			<h3>Get in Touch</h3>
+
+			<div class="anim4">
+				<div id="contact_us" class="container_12">
+					<div class="grid_12"></div>
+					<div class="clear"></div>
+					<div class="map">
+						<div class="grid_3">
+							<div class="text1">Address</div>	<address>
+							<dl>
+								<dt>GreenBlitz.<br>
+									Ramat HaSharon, Israel,<br>
+									Tel: +972-50-379-8393. <br>
+									Avishag CEO : +972-54-752-9997 <br>
+									Lirom VP: +972-54-215-5844 <br>
+									Yonatan - Head of Media: +972-52-405-1166 <br>
+								</dt>
+								<dd>E-mail:greenblitzFRC@gmail.com</dd>
+							</dl>
+						</address>
+
+						</div>
+						<div class="grid_3">
+							<div class="text1">&nbsp;</div>
+							<figure style="margin-left: 500px" class="">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3378.5604134597515!2d34.829305!3d32.135172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d49b2a7f84105%3A0xaabc3bdbd0af2f2f!2z15TXm9ek16gg15TXmdeo15XXpywg16jXnteqINeU16nXqNeV158sINeZ16nXqNeQ15w!5e0!3m2!1siw!2sus!4v1416166990623" width="1200" height="900" frameborder="0" style="border:0"></iframe>
+							</figure>
+						</div>
+						<div class="grid_5 prefix_1">
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="css/viewportchecker.js"></script>
+<script type="text/javascript">
+	/*jQuery(document).ready(function() {
+		jQuery('.anim1').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+			offset: 100
+		});
+	});*/
+</script>
+<script type="text/javascript">
+	/*jQuery(document).ready(function() {
+		jQuery('.anim2').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+			offset: 100
+		});
+	});*/
+</script>
+<script type="text/javascript">
+	/*jQuery(document).ready(function() {
+		jQuery('.anim3').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated bounceInRight', // Class to add to the elements when they are visible
+			offset: 100
+		});
+	});*/
+</script>
+<script type="text/javascript">
+	/*jQuery(document).ready(function() {
+		jQuery('.anim4').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+			offset: 100
+		});
+	});*/
+</script>
+<img class="" id=menu onclick="goToByScroll('page1')" title="arrow-forward" role="button" tabindex="0" aria-label="arrow-forward" src="images/arrow_up.png">
+</body>
+
+</html>

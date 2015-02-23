@@ -1,0 +1,54 @@
+<tiltviewergallery>
+	<photos>
+		<photo imageurl="imgs/img_1.jpg" showFlipButton="false">
+		</photo>
+		<photo imageurl="imgs/img_2.jpg" showFlipButton="false">
+			<title>Image 2</title>
+		</photo>
+		<photo imageurl="imgs/img_3.JPG" >
+			<title>Image 3</title>
+		</photo>
+		<photo imageurl="imgs/img_4.JPG" showFlipButton="false">
+			<title>Image 4</title>
+		</photo>
+		<photo imageurl="imgs/img_5.JPG" showFlipButton="false">
+			<title>Image 5</title>
+		</photo>
+		<photo imageurl="imgs/img_6.JPG" showFlipButton="false">
+			<title>Image 6</title>
+		</photo>
+		<photo imageurl="imgs/img_7.JPG" showFlipButton="false">
+			<title>Image 7</title>
+		</photo>
+		<photo imageurl="imgs/img_8.JPG" showFlipButton="false">
+			<title>Image 8</title>
+		</photo>
+		<photo imageurl="imgs/img_9.JPG" showFlipButton="false">
+			<title>Image 9</title>
+		</photo>
+		<photo imageurl="imgs/img_10.JPG" showFlipButton="false">
+			<title>Image 10</title>
+		</photo>
+		<photo imageurl="imgs/img_11.JPG" showFlipButton="false">
+			<title>Image 11</title>
+		</photo>
+		<photo imageurl="imgs/img_12.JPG" showFlipButton="false">
+			<title>Image 12</title>
+		</photo>
+		<photo imageurl="imgs/img_13.JPG" showFlipButton="false">
+			<title>Image 13</title>
+		</photo>
+		<photo imageurl="imgs/img_14.JPG" showFlipButton="false">
+			<title>Image 14</title>
+		</photo>
+		<photo imageurl="imgs/img_15.JPG" showFlipButton="false">
+			<title>Image 15</title>
+		</photo>
+		<photo imageurl="imgs/img_16.JPG" showFlipButton="false">
+			<title>Image 16</title>
+		</photo>
+        <photo imageurl="imgs/img_17.JPG" showFlipButton="false">
+            <title>Image 16</title>
+        </photo>
+	</photos>
+</tiltviewergallery>

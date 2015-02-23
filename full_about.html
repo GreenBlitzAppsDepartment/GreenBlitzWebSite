@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>
+        ABOUT
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.1.min.js"></script>
+    <style>
+        p{
+            font-size: x-large;
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.1.min.js"></script>
+    <script>
+        function getTextForMostThings(){
+            Parse.initialize("p4iC6A6WGN0KEpw5TdkHiIJdJFnd5qBBvA5FjTRR", "72jxZgPHP0OPVONn7BpF8uIGR9MWKZJ7zRIuUj81");
+            var GameScore = Parse.Object.extend("Pic1");
+            var query = new Parse.Query(GameScore);
+            query.get("PletYrGzJm", {
+                success: function(gameScore) {
+                    var about_short = gameScore.get("data");
+                    document.getElementById("about_tv").innerHTML = about_short;
+                },
+                error: function(object, error) {
+                    alert(error);
+                }
+            });
+        }
+    </script>
+</head>
+<body onload="getTextForMostThings()">
+
+<header class="page1">
+
+    <ul id="social">
+        <li ><a id="men5"><img src="images/facebook.png" class="men5" > <strong class="hover"></strong></a></li>
+        <li ><a id="men6"><img src="images/youtube.png"  class="men6"> <strong class="hover"></strong></a></li>
+    </ul>
+    <div id="main_nav"><ul class="sf-menu">
+        <li class="men1"><a href="index.html">Home </a> <strong class="hover"></strong></li>
+        <li class="current men"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
+   </ul>
+    </div>
+
+
+    <div class="clear"></div>
+    <div class="clear"></div>
+
+</header>
+
+</div>
+
+<div id="page2" class="content">
+
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>A BIT ABOUT US</h3>
+                <p>GreenBlitz is the official robotics team of the Hakfar Hayarok high school. We took  part in the FIRST FRC competition for the first time in the 2013 season</p>
+              </div>
+        </div>
+
+    </div>
+    <div id="page3" class="content">
+
+        <div id="jobs" class="container_12">
+            <div class="slogan">
+                <h3>WHAT'S FRC</h3>
+                <p>
+                    The varsity Sport for the Mind
+                    FRC combines the excitement of sport with the rigors of science and technology. Under strict rules, limited resources, and time limits, teams of 25 students or more are challenged to raise funds, design a team "brand," hone teamwork skills, and build and program robots to perform prescribed tasks against a field of competitors.  It’s as close to "real-world engineering" as a student can get. Volunteer professional mentors lend their time and talents to guide each team.
+                </p>
+                </div>
+            </div>
+    </div>
+    <div id="page4" class="content">
+
+        <div class="container_12">
+            <div class="grid_12">
+                <h3>WHAT'S GREENBLITZ</h3>
+                <p>Instead of telling you
+                    Let us just show you!</p>
+                <br><br>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/i0z11vflfdQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="page5" class="content">
+        <div class="slogan">
+            <h3>AWARDS</h3>
+            <div style="margin-top: 8%;" id="awards">
+
+
+            </div>
+           </div>
+        <script>
+            Parse.initialize("p4iC6A6WGN0KEpw5TdkHiIJdJFnd5qBBvA5FjTRR", "72jxZgPHP0OPVONn7BpF8uIGR9MWKZJ7zRIuUj81");
+            var GameScore = Parse.Object.extend("Pic1");
+            var query = new Parse.Query(GameScore);
+            query.get("hnuGPXvr0a", {
+            success: function (gameScore) {
+                var reward_name = gameScore.get("ArrayData");
+                var reward_year = gameScore.get("member_picture");
+                for (var i = 0; i < reward_name.length; i++) {
+                    var div = document.getElementById("awards");
+                    var oNewP = document.createElement("p");
+                    var oText = document.createTextNode("\n" + "\n" + "\n" + reward_name[i] + " - " + reward_year[i]);
+                    oNewP.style.fontSize = "large";
+                    oNewP.appendChild(oText);
+                    var x = document.createElement("IMG");
+                    x.setAttribute("src", "images/medal.png");
+                    x.setAttribute("width", "auto");
+                    x.setAttribute("width", "100");
+                    div.appendChild(x);
+                    div.appendChild(oNewP);
+                }
+            },
+            error: function (object, error) {
+                alert("Error please reload") ;
+            }
+        });</script>
+    </div>
+
+
+</div>
+<img class="" id=menu onclick="goToByScroll('page1')" title="arrow-forward" role="button" tabindex="0" aria-label="arrow-forward" src="images/arrow_up.png">
+</body>
+
+</html>

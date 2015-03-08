@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="icon" href="http://www.assist-me.org/images/logo.ico">
+        <link rel="icon" href="http://www.green-blitz.com/images/logo.ico">
         <style>
             html{
                 background: black ;
@@ -43,7 +43,7 @@
             500
         </title>
     </head>
-    <script>function shit(){window.open("http://www.assist-me.org","_self")}</script>
+    <script>function shit(){window.open("http://www.green-blitz.com","_self")}</script>
     <body onclick="shit()">
         <h1>
             500 Error... That one is on us.. or you if you can't type

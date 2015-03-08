@@ -1,6 +1,26 @@
 /**
  * Created by tomer on 05/12/14.
  */
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
 
 function handleTeamMembers(){
     var construction = ["koren blomberg","amit benzi","roi goldfarb","roi alder","miki kovlarzik","tamir blomberg","fadi alfraune","magdi alkatnai","oria michaeli","alon panfil","bar taub","ben gordon"]
@@ -193,6 +213,10 @@ $(window).scroll(function() {
 */
 var loaded = 0;
 function getTextForMostThings() {
+
+    if(isMobile.any()){
+        document.getElementById("loader").style.visibility = "hidden";
+    }
     Parse.initialize("p4iC6A6WGN0KEpw5TdkHiIJdJFnd5qBBvA5FjTRR", "72jxZgPHP0OPVONn7BpF8uIGR9MWKZJ7zRIuUj81");
     var GameScore = Parse.Object.extend("Pic1");
     var query = new Parse.Query(GameScore);

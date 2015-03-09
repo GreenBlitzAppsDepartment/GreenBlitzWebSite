@@ -392,6 +392,10 @@ header.page5 .hover {
 	font-size: 19px;
 	line-height: 19px;
 }
+.textlink {
+    font-size: 25px;
+    line-height: 19px;
+}
 .box {
 	background-color: #e6655e;
 	border: 3px solid #f4948b;
@@ -485,7 +489,7 @@ header.page5 .hover {
 }
 #page5 {
 	padding-top: 230px;
-	padding-bottom: 190px;
+	padding-bottom: 200px;
 }
 #page5 .slogan {
 	margin-bottom: 110px;
@@ -593,7 +597,7 @@ address dd span {
 	height: 200px;
 }*/
 #main_nav{
-	padding-left: 40%;
+	padding-left: 35%;
 }
 .men5{
 	width: 45px;
@@ -682,4 +686,13 @@ address dd span {
 #new{
     position: absolute;
     margin-left: 480px;
+}
+.address{
+    margin-top: 60px;
+}
+.numbers{
+    margin-top: 100px;
+}
+.be_next{
+
 }

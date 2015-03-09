@@ -5,7 +5,6 @@ function hello(){
         var array = new Array;
         for (var l = 1; l < 8; l++) {
             array[l] = "images/gallery_pics/img_"+l+".JPG";
-
         }
         for (var i = 1; i < array.length; i++) {
             var ul = document.getElementById("gallery_mini");

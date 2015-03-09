@@ -213,10 +213,6 @@ $(window).scroll(function() {
 */
 var loaded = 0;
 function getTextForMostThings() {
-
-    if(isMobile.any()){
-        document.getElementById("loader").style.visibility = "hidden";
-    }
     Parse.initialize("p4iC6A6WGN0KEpw5TdkHiIJdJFnd5qBBvA5FjTRR", "72jxZgPHP0OPVONn7BpF8uIGR9MWKZJ7zRIuUj81");
     var GameScore = Parse.Object.extend("Pic1");
     var query = new Parse.Query(GameScore);
@@ -384,35 +380,7 @@ function getWorks(){
     });
 
 }*/
-function DOSHITGALL() {
-   /* var array = new Array;
-    try {
 
-        for (var l = 1; l < 7; l++) {
-        array[l] = "gallery_pics/img_7.JPG";
-
-    }
-        document.getElementById("men22").src = "/img_7.JPG";
-    }
-    catch (E) {
-        alert(E)
-    }
-    alert(array[1]);
-    try {
-        for (var i = 1; i < array.length; i++) {
-            var ul = document.getElementById("gallery_mini");
-            var li = document.createElement("li");
-            var link = array[i];
-            var image = new Image();
-            image.src = link;
-            li.appendChild(image);
-            ul.appendChild(li);
-        }
-    }
-    catch (E) {
-        alert(E)
-    }*/
-}
 /*var GameScore = Parse.Object.extend("Pic1");
 var query = new Parse.Query(GameScore);
 query.get("Fw5jBPXKfM", {

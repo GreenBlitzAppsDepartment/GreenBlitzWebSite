@@ -3,8 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Home</title>
-	<link rel="import" href="components/bower_components/paper-fab/paper-fab.html">
+	<title>GreenBlitz</title>
 	<link rel="stylesheet" href="css/Animate.css">
 	<link rel="icon" href="images/logo.ico">
 	<link rel="shortcut icon" href="images/logo.ico" />
@@ -15,6 +14,7 @@
 	<script src="js/jquery-migrate-1.1.1.js"></script>
 	<script src="js/superfish.js"></script>
 	<script src="js/forms.js"></script>
+    <script src="js/mobiledetect.js"></script>
 	<script src="js/jquery.ui.totop.js"></script>
 	<script src="js/jquery.equalheights.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
@@ -28,9 +28,10 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 </head>
 
-<body onload="getTextForMostThings(); hello(); " class="">
+<body onload="getTextForMostThings(); if(!isMobile.any()){hello();}" class="">
 <!--==============================header=================================-->
 <div id="loader"></div>
+<script type="text/javascript">if(isMobile.any()){document.getElementById("loader").style.visibility = "hidden";}</script>
 <header class="page1">
 	<ul id="social">
 		<li><a id="men5"><img src="images/facebook.png" class="men5" > <strong class="hover"></strong></a>
@@ -48,9 +49,10 @@
 			</li>
 			<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Sponsors</a>  <strong class="hover"></strong>
 			</li>
-			<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a>  <strong class="hover"></strong>
+			<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contact</a>  <strong class="hover"></strong>
 			</li>
-            <li class=" men5"><a  href="gallery/index.html">Gallery</a>  <strong class="hover"></strong>
+            <li class=" men5"><a  href="gallery/index.html">Gallery</a>  <strong class="hover"></strong></li>
+            <li style="padding-left: 30px;"><a href="tutorials.html">Kfar Academy</a>  <strong class="hover"></strong></li>
 		</ul>
         <p id="new" style="color: #ff0000">*NEW*</p>
 		<ul id="icon">
@@ -73,8 +75,7 @@
 		</div>
 		</a>
 	</div>
-	<script type="text/javascript" src="engine1/wowslider.js"></script>
-	<script type="text/javascript" src="engine1/script.js"></script>
+
 	<script type="text/javascript">
 		var ul = document.getElementById("gallery_mini");
 		var li = document.createElement("li");
@@ -108,7 +109,7 @@
 
 				<div class="anim1">
 					<div id="about_wrapper">
-						<div class="text1">	<a href="full_about.html" rel="nofollow" class="tm_link"> <font color = "green">click here for full about</font></a>
+						<div class="textlink">	<a href="full_about.html" rel="nofollow" class="tm_link"> <font color = "green">More about GreenBlitz!</font></a>
 
 						</div>
 						<div id="about_short"></div>
@@ -170,7 +171,7 @@
 
 					</div>
 					<div class="grid_3">
-						<div class="text1">BB Real Estate</div>היא חברת יעוץ ומחקר בתחום הנדל"ן המספקת שירותים לגופים בשוק ההון, לחברות נדל"ן, ולגופים מוסדיים
+						<div class="text1">BB Real Estate</div>חברת יעוץ ומחקר בתחום הנדל"ן המספקת שירותים לגופים בשוק ההון, לחברות נדל"ן, ולגופים מוסדיים
 						<br>	<a href="http://b-bre.com/">Go to Site</a>
 
 					</div>
@@ -179,45 +180,44 @@
 						<br>	<a href="http://www.final.co.il/">Go To Site</a>
 
 					</div>
-					<div class="grid_3">
+					<div >
+                        <div style="width: 220px;margin-left: 38%;margin-top: 20%">
 						<div class="text1">YOU CAN BE NEXT!</div>CALL US AND BECOME OUR NEW SPONSOR
 						<br>	<a onclick="goToByScroll('page5')">CALL US NOW!</a>
-
+                        </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="page5" class="content">
-		<div class="slogan">
 			<h3>Get in Touch</h3>
 
 			<div class="anim4">
 				<div id="contact_us" class="container_12">
-					<div class="grid_12"></div>
-					<div class="clear"></div>
-					<div class="map">
-						<div class="grid_3">
-							<div class="text1">Address</div>	<address>
-							<dl>
-								<dt>GreenBlitz.<br>
-									Ramat HaSharon, Israel,<br>
-									Tel: +972-50-379-8393. <br>
-									Avishag CEO : +972-54-752-9997 <br>
-									Lirom VP: +972-54-215-5844 <br>
-									Yonatan - Head of Media: +972-52-405-1166 <br>
-								</dt>
-								<dd>E-mail:greenblitzFRC@gmail.com</dd>
-							</dl>
-						</address>
 
-						</div>
-						<div class="grid_3">
+                                <div class="address">
+                                    <div class="text1">Address</div>
+
+                                    GreenBlitz.<br>
+                                        Ramat HaSharon, Israel<br>
+                                </div>
+
+                    <div class="numbers">
+                        <div class="text1">Contact info</div>
+                                    Ido Main Mentor - +972-50-379-8393. <br>
+									Avishag CEO - +972-54-752-9997 <br>
+									Lirom VP - +972-54-215-5844 <br>
+									Yonatan - Head of Media: +972-52-405-1166 <br>
+                                    Tomer - Website Manager: +972-54-986-5523
+								<h4>E-mail:greenblitzFRC@gmail.com</h4>
+                    </div>
+						<!--<div class="grid_3">
 							<div class="text1">&nbsp;</div>
 							<figure style="margin-left: 500px" class="">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3378.5604134597515!2d34.829305!3d32.135172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d49b2a7f84105%3A0xaabc3bdbd0af2f2f!2z15TXm9ek16gg15TXmdeo15XXpywg16jXnteqINeU16nXqNeV158sINeZ16nXqNeQ15w!5e0!3m2!1siw!2sus!4v1416166990623" width="1200" height="900" frameborder="0" style="border:0"></iframe>
 							</figure>
-						</div>
+						</div>-->
 						<div class="grid_5 prefix_1">
 						</div>
 						<div class="clear"></div>

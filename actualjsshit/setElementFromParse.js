@@ -1,4 +1,7 @@
 /**
+ * Created by tomer on 09/03/15.
+ */
+/**
  * Created by tomer on 05/12/14.
  */
 var isMobile = {
@@ -23,18 +26,18 @@ var isMobile = {
 };
 
 /*function handleTeamMembers(){
-    var construction = ["koren blomberg","amit benzi","roi goldfarb","roi alder","miki kovlarzik","tamir blomberg","fadi alfraune","magdi alkatnai","oria michaeli","alon panfil","bar taub","ben gordon"]
-    var software = ["noam gal","amit banai","liam kimel","tomer schlesinger","eden rozen","oz tamir","shaked reich","ehud baraz","yoav hayut"];
-    var media = ["jonatan broder","jonatan kaplan","tomer rosenfeld","itamar holtzman","tamir neiderman","ofir bergman"];
-    var design = ["tal kogen","ido shyvitz(fanboy)","omer hareli","inbar yaakobi","shira yoren"];
-    var ceo = ["avishag rosenbaum"];
-    var chairman = ["ali levontin"]
-}*/
+ var construction = ["koren blomberg","amit benzi","roi goldfarb","roi alder","miki kovlarzik","tamir blomberg","fadi alfraune","magdi alkatnai","oria michaeli","alon panfil","bar taub","ben gordon"]
+ var software = ["noam gal","amit banai","liam kimel","tomer schlesinger","eden rozen","oz tamir","shaked reich","ehud baraz","yoav hayut"];
+ var media = ["jonatan broder","jonatan kaplan","tomer rosenfeld","itamar holtzman","tamir neiderman","ofir bergman"];
+ var design = ["tal kogen","ido shyvitz(fanboy)","omer hareli","inbar yaakobi","shira yoren"];
+ var ceo = ["avishag rosenbaum"];
+ var chairman = ["ali levontin"]
+ }*/
 
 function OpenInNewTab(url,shit) {
-   /* sessionStorage.setItem('label',shit);
-    var win = window.open(url, '_blank');
-    win.focus();*/
+    /* sessionStorage.setItem('label',shit);
+     var win = window.open(url, '_blank');
+     win.focus();*/
 }
 var s = false;
 var p = false;
@@ -77,8 +80,8 @@ $(document).keypress(function(event){
     }
     else if(String.fromCharCode(event.which) == "n") {
         if (s && p && o) {
-        n = true;
-    }     else{
+            n = true;
+        }     else{
             s = false;
             p = false;
             o = false;
@@ -140,7 +143,7 @@ $(window).scroll(function() {
         else{
             $(this).removeClass();
             $(this).addClass("fadeOut");
-         }
+        }
     });
 });
 
@@ -188,21 +191,21 @@ function getTextForMostThings() {
             var reward_name = gameScore.get("ArrayData");
             var reward_year = gameScore.get("member_picture");
             var div = document.getElementById("awards");
-                for (var i = 0; i < reward_name.length; i++) {
-                    var shitt = document.createElement("li");
-                    var oNewP = document.createElement("p");
-                    var oText = document.createTextNode(reward_name[i] + " - " + reward_year[i]);
-                    oNewP.style.fontSize = "large";
-                    oNewP.appendChild(oText);
-                    var x = document.createElement("IMG");
-                    x.setAttribute("src", "images/medal.png");
-                    x.setAttribute("width", "auto");
-                    x.setAttribute("width", "100");
+            for (var i = 0; i < reward_name.length; i++) {
+                var shitt = document.createElement("li");
+                var oNewP = document.createElement("p");
+                var oText = document.createTextNode(reward_name[i] + " - " + reward_year[i]);
+                oNewP.style.fontSize = "large";
+                oNewP.appendChild(oText);
+                var x = document.createElement("IMG");
+                x.setAttribute("src", "images/medal.png");
+                x.setAttribute("width", "auto");
+                x.setAttribute("width", "100");
 
-                    shitt.appendChild(x);
-                    shitt.appendChild(oNewP);
-                    div.appendChild(shitt);
-                }
+                shitt.appendChild(x);
+                shitt.appendChild(oNewP);
+                div.appendChild(shitt);
+            }
         },
         error: function (object, error) {
             alert("Error please reload") ;

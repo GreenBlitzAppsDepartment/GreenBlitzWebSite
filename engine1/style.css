@@ -296,11 +296,11 @@
 	-moz-box-shadow: 0 0 0 2px #fff;
 	box-shadow: 0 0 0 2px #fff;
 	
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 1s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
 }
 #wowslider-container1 .ws_bullets a:hover:after{
 	background-color: #60CAC0;
@@ -321,20 +321,20 @@
 	height: 100%;
 	background-color: #60CAC0;
 	
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 1s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
 	
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	
-	-webkit-transform:scale(0.4);
-	-moz-transform:scale(0.4);
-	-o-transform:scale(0.4);
-	transform:scale(0.4);	
+	-webkit-transform:scale(0.6);
+	-moz-transform:scale(0.6);
+	-o-transform:scale(0.6);
+	transform:scale(0.6);
 }
 @-webkit-keyframes nextArrow {
 	49% { -webkit-transform: translate(100%); }
@@ -379,10 +379,10 @@
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	
-	-webkit-transition: all .4s ease;
-  	-moz-transition: all .4s ease;
-  	-o-transition: all .4s ease;
-  	transition: all .4s ease;
+	-webkit-transition: all .6s ease;
+  	-moz-transition: all .6s ease;
+  	-o-transition: all .6s ease;
+  	transition: all .6s ease;
 }
 #wowslider-container1 a.ws_next {
 	position:absolute;
@@ -403,10 +403,10 @@
 	line-height: 1.5em;	
 	line-height: 1.9em\9; /* ie9 hack */
 	
-	-webkit-transition: color .4s ease;
-  	-moz-transition: color .4s ease;
-  	-o-transition: color .4s ease;
-  	transition: color .4s ease;
+	-webkit-transition: color .6s ease;
+  	-moz-transition: color .6s ease;
+  	-o-transition: color .6s ease;
+  	transition: color .6s ease;
 }
 /* IE10+ hacks */
 _:-ms-input-placeholder, :root #wowslider-container1 a.ws_prev:after {line-height: 1.9em;}
@@ -420,15 +420,15 @@ _:-ms-input-placeholder, :root #wowslider-container1 a.ws_next:after {line-heigh
 }
 #wowslider-container1 a.ws_next:hover:after{
 	color: #fff;
-	-webkit-animation: nextArrow 0.3s forwards;
-	-moz-animation: nextArrow 0.3s forwards;
-	animation: nextArrow 0.3s forwards;
+	-webkit-animation: nextArrow 0.6s forwards;
+	-moz-animation: nextArrow 0.6s forwards;
+	animation: nextArrow 0.6s forwards;
 }
 #wowslider-container1 a.ws_prev:hover:after{
 	color: #fff;
-	-webkit-animation: prevArrow 0.3s forwards;
-	-moz-animation: prevArrow 0.3s forwards;
-	animation: prevArrow 0.3s forwards;
+	-webkit-animation: prevArrow 0.6s forwards;
+	-moz-animation: prevArrow 0.6s forwards;
+	animation: prevArrow 0.6s forwards;
 }
 #wowslider-container1 a.ws_next:hover,
 #wowslider-container1 a.ws_prev:hover{
@@ -487,10 +487,10 @@ _:-ms-input-placeholder, :root #wowslider-container1 a.ws_next:after {line-heigh
 	border-radius: 50%;
 	overflow: hidden;
 	
-	 -webkit-transition: all .4s ease;
-  	-moz-transition: all .4s ease;
-  	-o-transition: all .4s ease;
-  	transition: all .4s ease;
+	 -webkit-transition: all .6s ease;
+  	-moz-transition: all .6s ease;
+  	-o-transition: all .6s ease;
+  	transition: all .6s ease;
 }
 #wowslider-container1 .ws_playpause:hover {
 	background-color: #60CAC0;
@@ -504,10 +504,10 @@ _:-ms-input-placeholder, :root #wowslider-container1 a.ws_next:after {line-heigh
 	line-height: 2.3em;
 	line-height: 2.6em\9; /* ie9 hack */
 	
-	-webkit-transition: color .4s ease;
-  	-moz-transition: color .4s ease;
-  	-o-transition: color .4s ease;
-  	transition: color .4s ease;
+	-webkit-transition: color .6s ease;
+  	-moz-transition: color .6s ease;
+  	-o-transition: color .6s ease;
+  	transition: color .6s ease;
 }
 /* IE10+ hacks */
 _:-ms-input-placeholder, :root #wowslider-container1 .ws_playpause:after {line-height: 2.6em;}
@@ -519,15 +519,15 @@ _:-ms-input-placeholder, :root #wowslider-container1 .ws_playpause:after {line-h
 }	
 #wowslider-container1 .ws_pause:hover:after {
 	color: #fff;
-	-webkit-animation: pauseAnimate 0.3s forwards;
-	-moz-animation: pauseAnimate 0.3s forwards;
-	animation: pauseAnimate 0.3s forwards;
+	-webkit-animation: pauseAnimate 0.6s forwards;
+	-moz-animation: pauseAnimate 0.6s forwards;
+	animation: pauseAnimate 0.6s forwards;
 }
 #wowslider-container1 .ws_play:hover:after {
 	color: #fff;
-	-webkit-animation: playAnimate 0.3s forwards;
-	-moz-animation: playAnimate 0.3s forwards;
-	animation: playAnimate 0.3s forwards;
+	-webkit-animation: playAnimate 0.6s forwards;
+	-moz-animation: playAnimate 0.6s forwards;
+	animation: playAnimate 0.6s forwards;
 }
 /* bottom center */
 #wowslider-container1  .ws_bullets {

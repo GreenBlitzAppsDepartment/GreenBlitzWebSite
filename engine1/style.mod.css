@@ -1,19 +1,19 @@
 #wowslider-container1 .ws_hovershow {
     /*display: none !important; */
     opacity: 0;
-    -webkit-transition:opacity 0.2s ease-in;
-    -moz-transition:opacity 0.2s ease-in;
-    -o-transition:opacity 0.2s ease-in;
-    transition:opacity 0.2s ease-in;
+    -webkit-transition:opacity 0.6s ease-in;
+    -moz-transition:opacity 0.6s ease-in;
+    -o-transition:opacity 0.6s ease-in;
+    transition:opacity 0.6s ease-in;
 }
 
 #wowslider-container1:hover .ws_hovershow {
     /*display: block !important;*/
     opacity: 1;
-    -webkit-transition:opacity 0.2s ease-in;
-    -moz-transition:opacity 0.2s ease-in;
-    -o-transition:opacity 0.2s ease-in;
-    transition:opacity 0.2s ease-in;
+    -webkit-transition:opacity 0.6s ease-in;
+    -moz-transition:opacity 0.6s ease-in;
+    -o-transition:opacity 0.6s ease-in;
+    transition:opacity 0.6s ease-in;
 }
 
 /*playpause*/

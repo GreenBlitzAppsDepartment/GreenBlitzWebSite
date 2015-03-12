@@ -132,7 +132,6 @@ var space = 380;
 $(window).scroll(function() {
     $('#menu').each(function(){
         var topOfWindow = $(window).scrollTop();
-
         if (400 < topOfWindow+space) {
             $(this).removeClass();
             $(this).addClass("fadeIn");
